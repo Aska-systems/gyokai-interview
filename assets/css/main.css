@@ -1659,3 +1659,26 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+
+/* デフォルトでPC向けセクションを表示し、スマートフォン向けセクションは非表示 */
+.pc-section {
+    display: block;
+}
+
+.mobile-section {
+    display: none;
+}
+
+/* 画面幅が768px以下のスマートフォンでは、セクションを切り替え */
+@media only screen and (max-width: 768px) {
+    .pc-section {
+        display: none;
+    }
+
+    .mobile-section {
+        display: block;
+    }
+}
